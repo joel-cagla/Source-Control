@@ -9,14 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         NavigationView {
-            Rectangle().fill(Color.green)
-                .ignoresSafeArea()
-                .navigationTitle("source control")
+            VStack{
+                Rectangle().fill(Color.red)
+                Rectangle().fill(Color.yellow)
+                Rectangle().fill(Color.cyan)
+            }
+            .ignoresSafeArea()
+            .navigationTitle("source control")
         }
     }
 }
-
 #Preview {
     ContentView()
 }
